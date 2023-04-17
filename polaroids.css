@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+
+}
+
+h1 {
+    position: relative;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-80%);
+    z-index: 500;
+}
+
+.img-container {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100vw;
+    height: auto;
+}
+
+.directions {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform: translateX(-50%);
+}
+
+.book {
+    height: 100%;
+    width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.picture-container {
+    position: relative;
+    width: 70%;
+    margin: 5% auto 0;
+    min-height: 90vh;
+}
+
+.polaroid {
+    position: absolute;
+    aspect-ratio: 823/1000;
+    background-color: #e5e5e5;
+    border: 1px outset #e5e5e579;
+    background: repeating-linear-gradient(20deg, #e5e5e5, #e5e5e5 0.5px, #e0e0e0 0.5px, #e0e0e0 0.6px), repeating-linear-gradient(155deg, #e5e5e5, #e5e5e5 0.5px, #e0e0e0 0.5px, #e0e0e0 0.6px);
+    top: 30%;
+}
+
+.polaroid-small {
+    width: 100px;
+    padding: 7px 7px 24px 7px;
+}
+
+.polaroid-medium {
+    width: 200px;
+    padding: 14px 14px 48px 14px;
+}
+
+.picture,
+.picture-overlay {
+    width: 100%;
+    height: 100%;
+    border: 1px inset #e5e5e5;
+    border-left: 1px inset #e5e5e5;
+    border-top: 1px inset #e5e5e5;
+    background-size: cover;
+}
+
+.picture-overlay {
+    background-color: #000;
+}
+
+.picture-container {
+    height: 200px;
+}
+
+.viewed-pictures {
+    position: relative;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 1201px) {
+    .picture-container {
+        height: 700px;
+    }
+
+    .viewed-pictures {
+        height: 210px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+    .picture-container {
+        height: 400px;
+    }
+
+    .viewed-pictures {
+        height: 160px;
+    }
+
+    .directions {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .directions {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+}
