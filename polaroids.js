@@ -26,7 +26,7 @@ class Polaroids {
         const picture = this.picture;
         picture.classList.add('picture');
 
-        picture.style.backgroundImage = `url(/images/${images.splice(this.splicePoint, 1)})`;
+        picture.style.backgroundImage = `url(images/${images.splice(this.splicePoint, 1)})`;
         const pictureOverlay = this.pictureOverlay;
         pictureOverlay.classList.add('picture-overlay');
         picture.appendChild(pictureOverlay);
